@@ -1,0 +1,20 @@
+ssh pbehnam3@coc-ice.pace.gatech.edu
+sshfs pbehnam3@coc-ice.pace.gatech.edu:/storage/home/hcocice1/pbehnam3/Project ./
+
+---------------------------------------
+To copy the file ‘Lab1_Problem1.cpp’ from your local machine to server (PACE-ICE), assuming you have a directory ‘Lab0’ on PACE-ICE in your home directory.
+scp Lab1_Problem1.cpp pbehnam3@coc-ice.pace.gatech.edu:Lab1
+---------------------------------------
+To copy a file from the server’s (PACE-ICE) home directory to your local machine’s current directory
+scp username@coc-ice.pace.gatech.edu:Lab1_Problem1.cpp ./
+
+---------------------------------------
+To copy the entire directory ‘Lab0’ from your local machine to the server (PACE-ICE) Lab1 in home directory (Note that this will overwrite the existing Lab1 on your server).
+scp –r NvcactiNov6 pbehnam3@coc-ice.pace.gatech.edu:Lab3
+
+---------------------------------------
+To copy entire ‘Lab0’ directory from the server (PACE-ICE) to your local machine in current directory. (Note that this will overwrite the existing Lab1 on your local machine).
+scp –r username@coc-ice.pace.gatech.edu:/Lab0 ./
+---------------------------------------
+OpenGl
+ pace-vnc-job -l nodes=1:ppn=1 -l walltime=06:00:00 -q coc-ice
