@@ -1,1 +1,7 @@
 
+Compile:
+compile: g++ -std=c++11 *.cpp -o pacman -lglut -lGL -lGLU -lm  -lpng
+
+
+Run:
+./pacman
