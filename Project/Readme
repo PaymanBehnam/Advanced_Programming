@@ -1,1 +1,39 @@
+**************************RUN**************************
+This is the final project for the Adv programming techniques written by Payman Behnam.
+This is optimized for macOS Catalina. Version 10.15.7 (19H15)and Graphics Intel Iris Plus Graphics 1536 MB. I will not guarantee same performance on other systems. But I tried for linux (PACE-ICE)and it was compiled and run without some minor features and a little bit lower performance! 
+Please refer to the Video_Mac folder to see how it works.
+Compile: make
+Run: ./pacman
+Make the window full screen for the best look!
+
+Run on PACE ICE (linux): use make file and run make.
+Note: You need to disable the "glWindowPos2i(100, 450)" line in game_control.cpp 
+Also you need to comment //#include <GLUT/glut.h> //on MAC and uncomment #include <GL/glut.h> // on linux. However, you cannot see the lives and scores as the glWindowPos2i(100, 450) doesn't work properly in PACE-ICE
+
+PS- I used functions to show Lives and Scores. Due to unavailability of GLEW library on PACE ICE and also using "glWindowPos2i(100, 450)" function I was not able to compile and show it on the PACE ICE (linux). I asked professor to asked admin to install library but eventually it didn't happen. So, I am not able to show it when running on PACE ICE (linux).  You may see it at the beginning when you run on PACE ICE (linux). It will not stay there permanently due to library problems of server. 
+
+
+********************Important Notes:*********************************
+
+1- I uploaded couple of videos that shows different stages of the game are working properly.
+
+2-The speed of the ghosts and packman are attribute of the class; so, you can change it easily to make the game easier or more difficult. 
+
+3-When I run it on Mac or PACE-ICE the speed and perhaps time elapsing units are different. So, you may face that it may take longer time for ghosts to being released if you run it on the PACE-ICE but this works properly when I run on MAC. This might be due to different issues like time dedicate to code I am running or the server being busy or free in different times or other issues.It works perfectly on Mac.
+
+4- There are couple of scenarios for various stages of the game not mentioned in the questions. After talking with TA, I come up with reasonable scenarios:
+A-If a ghost is in the home location and pacman easts power up, the white ghost can stay there since this is the safest location it can go:). The whole point of the going the furthest point! After time limitation of being white is ended, if the time of being released is also ended, the ghost(s) in home location go(es) out of the home location.
+B-When the ghosts are adjacent to each other in PACE-ICE since they have volume and are 3D and due some timing problem I mentioned above, you might see some overlapping of ghosts especially when they are passing the same path. It works fine in Mac though.
+C-When the ghosts become white and go far away if they reach to a wall and this is the furthest point to the Pacman they stay there until the Pacman location is updated and the furthest point is changed. 
+
+
+
+
+
+ 
+ 
+
+
+
+
 
